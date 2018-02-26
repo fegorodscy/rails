@@ -1,5 +1,12 @@
 ## Rails 6.0.0.alpha (Unreleased) ##
 
+*   Fix `dependent: :destroy` issue for has_one/belongs_to relationship where
+    the parent class was getting deleted when the child was not.
+
+    Fixes #32022.
+
+    *Fernando Gorodscy*
+
 *   Make `reflection.klass` raise if `polymorphic?` not to be misused.
 
     Fixes #31876.
